@@ -1,0 +1,24 @@
+<!-- login.html -->
+<div class="container" >
+  <h2>Login</h2>
+  <form ng-submit="login()">
+    <label for="email">Email:✉️</label><br />
+    <input
+      type="email"
+      class="inp"
+      placeholder="Email"
+      ng-model="user.email"
+      required
+    /><br />
+    <label for="password">Password:🔑</label><br />
+    <input
+      type="password"
+      class="inp"
+      placeholder="Password"
+      ng-model="user.password"
+      required
+    /><br />
+    <button type="submit" class="btn">Login</button>
+  </form>
+  <a ng-href="#/signup">Create an account</a>
+</div>

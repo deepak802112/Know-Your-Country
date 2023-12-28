@@ -1,0 +1,72 @@
+<div class="dashboard-container">
+  <!-- <h1>Welcome To Dashboard!</h1> -->
+  <h1>Explore Different Country In The World🌏</h1>
+</div>
+<div class="btnmid">
+  <select
+    ng-model="selectedAlphabet"
+    ng-change="filterCountries()"
+    class="region"
+  >
+    <option value>All</option>
+    <option ng-repeat="alphabet in alphabets" value="{{ alphabet }}">
+      {{ alphabet }}
+    </option>
+  </select>
+
+  <select
+    ng-model="selectedRegion"
+    ng-change="filterCountries()"
+    class="region"
+  >
+    <option value>All Regions</option>
+    <option ng-repeat="region in regions" value="{{ region }}">
+      {{ region }}
+    </option>
+  </select>
+
+  <input
+    type="text"
+    class="region"
+    ng-model="searchQuery"
+    placeholder="Search"
+  />
+
+  <label>
+    <input
+      type="radio"
+      ng-model="searchType"
+      value="country"
+      ng-change="filterCountries()"
+    />
+    Country
+  </label>
+
+  <!-- <label>
+    <input
+      type="radio"
+      ng-model="searchType"
+      value="capital"
+      ng-change="filterCountries()"
+    />
+    Capital
+  </label> -->
+
+  <button ng-click="filterCountries()" class="btn">Search</button>
+  <button ng-click="backHome()" class="logout">Log-out</button>
+</div>
+<div style="width: 100%; margin-left: 70px">
+  <div class="country-box" ng-repeat="country in filteredCountries">
+    <div>
+      <img
+        class="country-flag"
+        ng-src="{{ country.flags.png }}"
+        alt="{{ country.name.common }}"
+      />
+      <h3>{{ country.name.common }}</h3>
+      <p><strong>Capital:</strong> {{ getCapital(country) }}</p>
+      <p><strong>Language:</strong> {{ getLanguageNames(country) }}</p>
+      <p><strong>Currency:</strong> {{ getCurrencyNames(country) }}</p>
+    </div>
+  </div>
+</div>

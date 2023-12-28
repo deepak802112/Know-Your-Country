@@ -1,0 +1,62 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Ayush",
+      "email": "Lucknow@mail.com",
+      "password": "abc"
+    },
+    {
+      "name": "abc",
+      "email": "abc@mail.com",
+      "password": "abc",
+      "id": 2
+    },
+    {
+      "email": "testug@example.com",
+      "password": "password6",
+      "id": 4
+    },
+    {
+      "email": "vnhbgff@gmail.com",
+      "password": "asRG3CUi!yBFK!",
+      "name": "vnhb",
+      "id": 5
+    },
+    {
+      "name": "Psp",
+      "email": "as@gmail.com",
+      "password": "adc",
+      "id": 6
+    },
+    {
+      "name": "ss",
+      "email": "ss@gmail.com",
+      "password": "123",
+      "id": 7
+    },
+    {
+      "name": "deepak",
+      "email": "dk@gmail.com",
+      "password": "123",
+      "id": 8
+    },
+    {
+      "name": "akshay",
+      "email": "akshay123@gmail.com",
+      "password": "123456",
+      "id": 9
+    }
+  ],
+  "countries": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    }
+  ]
+}
